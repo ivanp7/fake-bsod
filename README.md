@@ -9,6 +9,7 @@ How to compile:
 -----------------
 
 $ cd fake-bsod
+
 $ make
 
 How to use:
