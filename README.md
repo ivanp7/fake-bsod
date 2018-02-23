@@ -1,12 +1,18 @@
 # Blue Screen of Death
 
+Dependencies:
+-----------------
+
+* ncurses shared library
+
 How to compile:
 -----------------
 
-$ g++ bsod.cpp -o bsod -lncurses
+$ cd fake-bsod
+$ make
 
 How to use:
 -----------------
 
-$ ./bsod "Ubuntu"
+$ ./fake-bsod "Arch Linux"
 
