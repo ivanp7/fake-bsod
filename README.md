@@ -7,13 +7,12 @@ Dependencies:
 
 How to compile:
 -----------------
-
+```
 $ cd fake-bsod
-
 $ make
-
+```
 How to use:
 -----------------
-
+```
 $ ./fake-bsod "Arch Linux"
-
+```
