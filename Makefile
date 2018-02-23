@@ -1,6 +1,6 @@
 CC=gcc
-CFLAGS=-I/usr/include -L/usr/lib -lstdc++ -lncurses
+CFLAGS=-I/usr/include -L/usr/lib -lncurses
 
-fake-bsod: bsod.cpp output.h
+fake-bsod: bsod.cpp bsod.h output.h
 	$(CC) -o $@ $< $(CFLAGS)
 
