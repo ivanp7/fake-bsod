@@ -1,3 +1,6 @@
+#ifndef BSOD_H
+#define BSOD_H
+
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
@@ -142,4 +145,6 @@ int DrawBSoD(const char *title)
 
     return 0;
 }
+
+#endif
 

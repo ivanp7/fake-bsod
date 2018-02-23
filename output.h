@@ -1,5 +1,7 @@
-// Platform-dependent terminal functions
-// Linux ncurses support only for now
+#ifndef OUTPUT_H
+#define OUTPUT_H
+
+// Platform-dependent functions
 
 #include <ncurses.h>
 
@@ -68,4 +70,6 @@ void WriteString(const char* str)
 {
   printw(str);
 }
+
+#endif
 
