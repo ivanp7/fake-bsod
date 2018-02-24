@@ -58,21 +58,21 @@ int DrawBSoD(const char *title)
     GenerateRandomString(A, errorNumber4 + 1, 1);
     GenerateRandomString(A, errorNumber5, 8);
 
-    char reason1[67]; reason1[66] = '\0';
-    char reason2[54]; reason2[53] = '\0';
+    char reason1[67]; reason1[0] = reason1[66] = '\0';
+    char reason2[54]; reason2[0] = reason2[53] = '\0';
 
-    strncpy(reason1 +  0, "A fatal exception ", 18);
-    strncpy(reason1 + 18, errorNumber1, 2);
-    strncpy(reason1 + 20, " has occured at ", 16);
-    strncpy(reason1 + 36, errorNumber2, 4);
-    strncpy(reason1 + 40, ":", 1);
-    strncpy(reason1 + 41, errorNumber3, 8);
-    strncpy(reason1 + 49, " in VXD VMM(", 12);
-    strncpy(reason1 + 61, errorNumber4, 2);
-    strncpy(reason1 + 63, ") +", 3);
+    strcat(reason1, "A fatal exception ");
+    strcat(reason1, errorNumber1);
+    strcat(reason1, " has occured at ");
+    strcat(reason1, errorNumber2);
+    strcat(reason1, ":");
+    strcat(reason1, errorNumber3);
+    strcat(reason1, " in VXD VMM(");
+    strcat(reason1, errorNumber4);
+    strcat(reason1, ") +");
 
-    strncpy(reason2 +  0, errorNumber5, 8);
-    strncpy(reason2 +  8, ". The current application will be terminated.", 45);
+    strcat(reason2, errorNumber5);
+    strcat(reason2, ". The current application will be terminated.");
 
     size_t reasonShift = (screenSizeX - 66) / 2;
 
