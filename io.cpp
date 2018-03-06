@@ -1,7 +1,6 @@
-#ifndef OUTPUT_H
-#define OUTPUT_H
-
 // Platform-dependent functions
+
+#include "io.h"
 
 #include <ncurses.h>
 
@@ -71,5 +70,8 @@ void WriteString(const char* str)
   printw(str);
 }
 
-#endif
+int WaitForKey()
+{
+    return getch();
+}
 
