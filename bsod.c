@@ -1,6 +1,3 @@
-#ifndef BSOD_H
-#define BSOD_H
-
 #include "bsod.h"
 
 #include <stdlib.h>
@@ -147,6 +144,4 @@ int DrawBSoD(const char *title)
 
     return 0;
 }
-
-#endif
 
