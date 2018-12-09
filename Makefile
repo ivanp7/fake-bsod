@@ -5,8 +5,8 @@ ODIR = .
 LDIR = .
 
 CC     = gcc
-CFLAGS = -I$(IDIR) -Wall `pkg-config --cflags ncursesw`
-LIBS   = `pkg-config --libs ncursesw`
+CFLAGS = -I$(IDIR) -Wall `pkg-config --cflags ncurses`
+LIBS   = `pkg-config --libs ncurses`
 
 _DEPS = io.h bsod.h
 DEPS = $(patsubst %,$(IDIR)/%,$(_DEPS))
